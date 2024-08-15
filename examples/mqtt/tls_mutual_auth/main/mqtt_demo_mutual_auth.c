@@ -371,7 +371,7 @@ static StaticSemaphore_t xTlsContextSemaphoreBuffer;
 
 /*-----------------------------------------------------------*/
 
-int aws_iot_demo_main( int argc, char ** argv );
+int aws_mqtt_app( int argc, char ** argv );
 
 /**
  * @brief The random number generator to use for exponential backoff with
@@ -1661,7 +1661,7 @@ static MQTTStatus_t processLoopWithTimeout( MQTTContext_t * pMqttContext,
  * are resent in this demo. In order to support retransmission all the outgoing
  * publishes are stored until a PUBACK is received.
  */
-int aws_iot_demo_main( int argc,
+int aws_mqtt_app( int argc,
           char ** argv )
 {
     int returnStatus = EXIT_SUCCESS;

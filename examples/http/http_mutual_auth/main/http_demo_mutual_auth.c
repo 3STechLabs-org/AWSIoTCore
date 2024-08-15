@@ -114,7 +114,7 @@ static StaticSemaphore_t xTlsContextSemaphoreBuffer;
 
 /*-----------------------------------------------------------*/
 
-int aws_iot_demo_main( int argc, char ** argv );
+int aws_mqtt_app( int argc, char ** argv );
 
 /**
  * @brief Connect to HTTP server with reconnection retries.
@@ -366,7 +366,7 @@ static void cleanupESPSecureMgrCerts( NetworkContext_t * pNetworkContext )
  * @note This example is single-threaded and uses statically allocated memory.
  *
  */
-int aws_iot_demo_main( int argc,
+int aws_mqtt_app( int argc,
           char ** argv )
 {
     /* Return value of main. */

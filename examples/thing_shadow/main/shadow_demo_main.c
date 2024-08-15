@@ -659,7 +659,7 @@ static void eventCallback( MQTTContext_t * pMqttContext,
  * loops to process incoming messages. Those are not the focus of this demo
  * and therefore, are placed in a separate file shadow_demo_helpers.c.
  */
-int aws_iot_demo_main( int argc,
+int aws_mqtt_app( int argc,
           char ** argv )
 {
     int returnStatus = EXIT_SUCCESS;

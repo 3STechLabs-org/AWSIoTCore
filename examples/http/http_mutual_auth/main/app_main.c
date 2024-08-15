@@ -20,7 +20,7 @@
 
 static const char *TAG = "HTTP_MUTUAL_AUTH";
 
-int aws_iot_demo_main( int argc, char ** argv );
+int aws_mqtt_app( int argc, char ** argv );
 
 /*
  * Prototypes for the demos that can be started from this project. Note the
@@ -55,5 +55,5 @@ void app_main()
      */
     ESP_ERROR_CHECK(example_connect());
 
-    aws_iot_demo_main(0,NULL);
+    aws_mqtt_app(0,NULL);
 }
